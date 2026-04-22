@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Personality Analyzer",
+  "version": "1.0",
+  "description": "Consent-based personality analysis",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+  "http://127.0.0.1:8000/*",
+  "https://phreatic-secundly-konner.ngrok-free.dev/*"
+]
+}

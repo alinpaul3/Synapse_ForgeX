@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personality Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/icon?family=Material+Icons)" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2 class="app-title">🧠 Personality AI</h2>
+
+  <!-- Login Section -->
+  <div class="card login-card">
+    <div class="input-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com">
+    </div>
+    <button id="login" class="primary-button">Login</button>
+    <p id="loginStatus" class="status-message"></p>
+  </div>
+
+  <!-- Username Section -->
+  <div class="card username-card">
+    <div class="input-group">
+      <label for="username">Your Username</label>
+      <input type="text" id="username" placeholder="e.g., JohnDoe123">
+    </div>
+  </div>
+
+  <!-- Platforms Section -->
+  <div class="card platform-selection-card">
+    <p class="card-title">Choose 2 Platforms to Analyze:</p>
+
+    <div class="platforms">
+      <div class="platform" data-value="youtube">
+        <span class="platform-icon">▶</span>
+        <span class="platform-name">YouTube</span>
+      </div>
+      <div class="platform" data-value="reddit">
+        <span class="platform-icon">👽</span>
+        <span class="platform-name">Reddit</span>
+      </div>
+      <div class="platform" data-value="twitter">
+        <span class="platform-icon">🐦</span>
+        <span class="platform-name">Twitter</span>
+      </div>
+      <div class="platform" data-value="instagram">
+        <span class="platform-icon">📸</span>
+        <span class="platform-name">Instagram</span>
+      </div>
+    </div>
+    <p class="selection-feedback" id="platformSelectionFeedback"></p>
+  </div>
+
+  <!-- Consent Section -->
+  <div class="card consent-card">
+    <label class="checkbox-container">
+      <input type="checkbox" id="consent">
+      <span class="checkmark"></span>
+      <span class="consent-text">I agree to data usage for personality analysis.</span>
+    </label>
+  </div>
+
+  <!-- Analyze Button -->
+  <button id="start" class="primary-button analyze-button">Analyze Personality</button>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
